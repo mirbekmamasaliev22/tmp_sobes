@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  list = [1, 2, 3, 4, 5];
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onCardClick(event: any) {
+    alert(`Clicked: Event from parent`)
+  }
 }
